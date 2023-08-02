@@ -70,3 +70,4 @@ Aby można było szybko zlokalizować problem i się do niego odnieść, umieś�
 - link do strony z zadaniem
 - numer zadania (ewentualnie podpunkt)
 - opis problemu
+# ONL_JEE_W_04_Podstawy_Java_Praca_Domowa
