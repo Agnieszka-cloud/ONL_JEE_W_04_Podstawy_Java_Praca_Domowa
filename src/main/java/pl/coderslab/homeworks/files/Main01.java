@@ -7,24 +7,25 @@ package pl.coderslab.homeworks.files;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class Main04 {
+public class Main01 {
 
     public static void main(String[] args) {
-
-    }
-    public static int count(String fileName){
-        File file = new File("text3.txt");
-        int sum = 0;
         try {
-            Scanner scanner = new Scanner(file);
-            while (scanner.hasNextLine()){
-
-            }
+            System.out.println(count("text1.txt"));
         }catch (FileNotFoundException e){
-            e.printStackTrace();
+            System.out.println("brak pliku");
         }
-        return
+    }
+    public static int count(String fileName) throws FileNotFoundException {
+        File file = new File(fileName);
+        int sum = 0;
+        Scanner scanner = new Scanner(file);
+        while (scanner.hasNextLine()) {
+            sum = sum + scanner.nextLine().length();
+        }
+        return sum;
     }
 }
